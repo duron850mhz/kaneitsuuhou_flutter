@@ -39,20 +39,6 @@ class _PageInputState extends State<PageInput> {
             ),
           ),
         ]),
-        // Row(children: <Widget>[
-        //   RadioListTile(
-        //     title: Text('支出'),
-        //     value: RadioValue.SHISYUTSU,
-        //     groupValue: _gValue,
-        //     onChanged: (value) => _onRadioSelected(value),
-        //   ),
-        //   RadioListTile(
-        //     title: Text('収入'),
-        //     value: RadioValue.SYUNYU,
-        //     groupValue: _gValue,
-        //     onChanged: (value) => _onRadioSelected(value),
-        //   ),
-        // ]),
         Row(children: <Widget>[
           Text(df.format(_date)),
           IconButton(
@@ -66,44 +52,17 @@ class _PageInputState extends State<PageInput> {
             labelText: '金額',
           ),
         ),
-        // Row(children: <Widget>[
-        //   Text('金額'),
-        //   Text('ぽえ'),
-        // ]),
-        // Row(children: <Widget>[
-        //   new Text("項目名"),
-        //   new TextField(),
-        // ]),
+        TextField(
+          decoration: const InputDecoration(
+            icon: Icon(Icons.create_rounded),
+            labelText: '項目名',
+          ),
+        ),
         // Row(children: <Widget>[
         //   new Text("分類"),
         //   new TextField(),
         // ]),
       ]),
-      // body: Container(
-      //   child: Column(
-      //     children: <Widget>[
-      //       Row(
-      //         children: <Widget>[
-      //           Text('1-1'),
-      //           Flexible(
-      //             child: TextField(
-      //               decoration: const InputDecoration(
-      //                 icon: Icon(Icons.input_rounded),
-      //                 labelText: 'ぽえぽえ',
-      //               ),
-      //             ),
-      //           ),
-      //         ],
-      //       ),
-      //       Row(
-      //         children: <Widget>[
-      //           Text('2-1'),
-      //           Text('2-2'),
-      //         ],
-      //       )
-      //     ],
-      //   ),
-      // ),
     );
   }
 
